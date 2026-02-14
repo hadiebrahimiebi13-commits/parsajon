@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>درسنامه جامع هماتولوژی | خلاصه ۸ فصل</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+            line-height: 1.8;
+        }
+        .gradient-header {
+            background: linear-gradient(135deg, #b91c1c 0%, #991b1b 100%);
+        }
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid #f3f4f6;
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            border-color: #fee2e2;
+        }
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            margin-top: 3rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        .chapter-badge {
+            background-color: #fee2e2;
+            color: #991b1b;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 700;
+            margin-left: 1rem;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: #111827;
+        }
+        .content-title {
+            font-size: 1.125rem;
+            font-weight: 800;
+            color: #7f1d1d;
+            margin-bottom: 1rem;
+            position: relative;
+            padding-right: 1rem;
+        }
+        .content-title::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 6px;
+            width: 4px;
+            height: 16px;
+            background-color: #ef4444;
+            border-radius: 2px;
+        }
+        .box-exam {
+            background-color: #fef2f2;
+            border-right: 4px solid #ef4444;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            color: #7f1d1d;
+        }
+        .box-diagnosis {
+            background-color: #eff6ff;
+            border-right: 4px solid #3b82f6;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            color: #1e3a8a;
+        }
+        .box-treatment {
+            background-color: #ecfdf5;
+            border-right: 4px solid #10b981;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            color: #064e3b;
+        }
+        .nav-chip {
+            display: inline-block;
+            white-space: nowrap;
+            padding: 0.5rem 1rem;
+            background-color: white;
+            color: #374151;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            transition: all 0.2s;
+            border: 1px solid transparent;
+        }
+        .nav-chip.active, .nav-chip:hover {
+            background-color: #fee2e2;
+            color: #991b1b;
+            border-color: #fca5a5;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.875rem;
+        }
+        th {
+            background-color: #f9fafb;
+            color: #374151;
+            font-weight: 700;
+            text-align: right;
+            padding: 0.75rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        td {
+            padding: 0.75rem;
+            border-bottom: 1px solid #f3f4f6;
+            color: #4b5563;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+        ul.custom-list {
+            list-style-type: disc;
+            padding-right: 1.5rem;
+            color: #4b5563;
+        }
+        ul.custom-list li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body class="pb-24">
+
+    <!-- Header -->
+    <header class="gradient-header text-white p-6 shadow-lg sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="text-xl md:text-2xl font-black">درسنامه جامع هماتولوژی</h1>
+                <p class="text-red-100 text-xs md:text-sm mt-1">جمع‌بندی نکات کلیدی ۸ فصل اول: آنمی‌ها، بدخیمی‌ها و انتقال خون</p>
+            </div>
+            <div class="hidden md:block text-xs bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm">
+                ویژه پره‌انترنی و دستیاری
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <div class="bg-white border-b sticky top-[88px] z-40 shadow-sm">
+        <div class="max-w-5xl mx-auto px-4 py-3">
+            <nav class="flex gap-2 overflow-x-auto no-scrollbar pb-1">
+                <a href="#ch1" class="nav-chip">۱. آنمی و پلی‌سیتمی</a>
+                <a href="#ch2" class="nav-chip">۲. فقر آهن</a>
+                <a href="#ch3" class="nav-chip">۳. همولیز & خونریزی</a>
+                <a href="#ch4" class="nav-chip">۴. هموگلوبینوپاتی</a>
+                <a href="#ch5" class="nav-chip">۵. آپلاستیک & MDS</a>
+                <a href="#ch6" class="nav-chip">۶. مگالوبلاستیک</a>
+                <a href="#ch7" class="nav-chip">۷. انتقال خون</a>
+                <a href="#ch8" class="nav-chip">۸. لوسمی حاد (AML)</a>
+            </nav>
+        </div>
+    </div>
+
+    <main class="max-w-5xl mx-auto p-4 md:p-6">
+
+        <!-- Chapter 1 -->
+        <div id="ch1" class="section-header">
+            <span class="chapter-badge">فصل ۱</span>
+            <h2 class="section-title">آنمی و پلی‌سیتمی</h2>
+        </div>
+
+        <section class="card">
+            <h3 class="content-title">نحوه برخورد با آنمی حاد</h3>
+            <p class="text-sm text-gray-700 mb-4">آنمی حاد دو علت اصلی دارد: <strong>اتلاف خون (Blood loss)</strong> و <strong>همولیز</strong>.</p>
+            <div class="box-exam">
+                <strong>نکات بالینی خونریزی حاد:</strong>
+                <ul class="text-sm mt-2 space-y-1">
+                    <li><strong>10-15% اتلاف خون:</strong> ناپایداری همودینامیک. مشکل اصلی کاهش پرفیوژن است نه آنمی.</li>
+                    <li><strong>&gt;30% اتلاف خون:</strong> هیپوتانسیون و تاکی‌کاردی وضعیتی رخ می‌دهد.</li>
+                    <li><strong>&gt;40% اتلاف خون (بیش از 2 لیتر):</strong> علائم شوک هیپوولمیک (کانفیوژن، تنگی‌نفس). نیاز فوری به جایگزینی خون.</li>
+                </ul>
+            </div>
+            <p class="text-sm text-gray-700"><strong>همولیز داخل عروقی:</strong> به علت آزاد شدن هموگلوبین، بیمار با کمردرد حاد، هموگلوبینوری و نارسایی کلیه تظاهر می‌کند.</p>
+        </section>
+
+        <section class="card">
+            <h3 class="content-title">طبقه‌بندی آنمی‌ها بر اساس اندکس رتیکولوسیت</h3>
+            <p class="text-sm text-gray-700 mb-3">اولین قدم جهت طبقه‌بندی آنمی‌ها، محاسبه اندکس تولید رتیکولوسیت است.</p>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                    <h4 class="font-bold text-blue-900 text-sm mb-2">اندکس &lt; 2.5 (هیپوپرولیفراتیو)</h4>
+                    <p class="text-xs text-gray-700">مشکل اصلی: اختلال در تولید گلبول قرمز در مغز استخوان</p>
+                    <ul class="custom-list text-xs mt-2">
+                        <li>آنمی فقر آهن</li>
+                        <li>آنمی مگالوبلاستیک</li>
+                        <li>آنمی آپلاستیک</li>
+                    </ul>
+                </div>
+                <div class="bg-red-50 p-4 rounded-lg border border-red-200">
+                    <h4 class="font-bold text-red-900 text-sm mb-2">اندکس ≥ 2.5 (پاسخ مغز استخوان)</h4>
+                    <p class="text-xs text-gray-700">مغز استخوان سالم است و به آنمی پاسخ می‌دهد</p>
+                    <ul class="custom-list text-xs mt-2">
+                        <li>همولیز</li>
+                        <li>خونریزی حاد</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box-exam mt-4">
+                <strong>فرمول محاسبه:</strong>
+                <div class="text-sm mt-2 bg-white p-3 rounded border border-red-200">
+                    <p class="font-mono">تصحیح اول = (تعداد رتیکولوسیت % × هموگلوبین بیمار) ÷ 15</p>
+                    <p class="font-mono mt-1">اندکس تولید رتیکولوسیت = تصحیح اول ÷ 2</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h3 class="content-title">طبقه‌بندی آنمی‌ها بر اساس MCV و RDW</h3>
+            <div class="overflow-x-auto rounded-lg border border-gray-200 mb-4">
+                <table class="w-full text-sm">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th>نوع آنمی</th>
+                            <th>MCV</th>
+                            <th>RDW</th>
+                            <th>علل شایع</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>میکروسیتیک</strong></td>
+                            <td>&lt;80</td>
+                            <td>متغیر</td>
+                            <td>فقر آهن، تالاسمی، آنمی بیماری مزمن</td>
+                        </tr>
+                        <tr>
+                            <td><strong>نرموسیتیک</strong></td>
+                            <td>80-100</td>
+                            <td>طبیعی</td>
+                            <td>بیماری مزمن، خونریزی حاد، همولیز اولیه</td>
+                        </tr>
+                        <tr>
+                            <td><strong>ماکروسیتیک</strong></td>
+                            <td>&gt;100</td>
+                            <td>بالا</td>
+                            <td>مگالوبلاستیک، میلودیسپلازی، رتیکولوسیتوز</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="box-diagnosis">
+                <strong>نکته کلیدی RDW:</strong>
+                <ul class="text-sm mt-1 space-y-1">
+                    <li><strong>فقر آهن:</strong> RDW افزایش می‌یابد (آنیزوسیتوز شدید)</li>
+                    <li><strong>تالاسمی:</strong> RDW معمولاً طبیعی است</li>
+                    <li>اندکس منتزر = MCV ÷ (تعداد RBC به میلیون) → اگر &lt;13 باشد تالاسمی محتمل‌تر است</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card">
+            <h3 class="content-title">پلی‌سیتمی و تشخیص افتراقی</h3>
+            <p class="text-sm text-gray-700 mb-3">اولین قدم، اثبات افزایش واقعی توده گلبول‌های قرمز (RBC Mass) با استفاده از رادیوایزوتوپ Cr51 است.</p>
+            <div class="grid md:grid-cols-3 gap-3">
+                <div class="bg-gray-50 p-3 rounded border border-gray-300">
+                    <h4 class="font-bold text-gray-800 text-sm">پلی‌سیتمی کاذب</h4>
+                    <p class="text-xs text-gray-600 mt-1">توده RBC طبیعی<br>کاهش حجم پلاسما</p>
+                </div>
+                <div class="bg-red-50 p-3 rounded border border-red-300">
+                    <h4 class="font-bold text-red-800 text-sm">پلی‌سیتمی ورا (PV)</h4>
+                    <p class="text-xs text-gray-600 mt-1">توده RBC بالا<br>EPO پایین/غیرقابل اندازه<br>جهش JAK2 (95%)</p>
+                </div>
+                <div class="bg-blue-50 p-3 rounded border border-blue-300">
+                    <h4 class="font-bold text-blue-800 text-sm">پلی‌سیتمی ثانویه</h4>
+                    <p class="text-xs text-gray-600 mt-1">توده RBC بالا<br>EPO بالا<br>علل: هیپوکسی، تومور</p>
+                </div>
+            </div>
+            <div class="box-diagnosis mt-3">
+                <strong>تفسیر EPO بالا:</strong>
+                <ul class="text-sm mt-1 space-y-1">
+                    <li><strong>اگر O₂ Saturation &lt;92%:</strong> بیماری قلبی/ریوی یا زندگی در ارتفاعات</li>
+                    <li><strong>اگر O₂ Saturation طبیعی:</strong> بررسی سیگار (COHb بالا) یا تومورهای ترشح‌کننده EPO (هپاتوما، لیومیوم رحمی، کیست کلیوی، همانژیوم مخچه)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Chapter 2 -->
+        <div id="ch2" class="section-header">
+            <span class="chapter-badge">فصل ۲</span>
+            <h2 class="section-title">آنمی فقر آهن و سایر آنمی‌های هیپوپرولیفراتیو</h2>
+        </div>
+
+        <section class="card">
+            <h3 class="content-title">متابولیسم آهن و هپسیدین</h3>
+            <p class="text-sm text-gray-700 mb-3">هورمون اصلی تنظیم‌کننده آهن <strong>هپسیدین (Hepcidin)</strong> است که در کبد ساخته می‌شود.</p>
+            <ul class="custom-list text-sm">
+                <li><strong>فقر آهن:</strong> هپسیدین کاهش می‌یابد (برای افزایش جذب آهن)</li>
+                <li><strong>التهاب:</strong> هپسیدین افزایش می‌یابد (باعث نگهداری آهن در ماکروفاژها)</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h3 class="content-title">تشخیص افتراقی آنمی‌های میکروسیتیک</h3>
+            <div class="overflow-x-auto rounded-lg border border-gray-200 mb-4">
+                <table class="w-full text-sm">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th>شاخص</th>
+                            <th>فقر آهن</th>
+                            <th>بیماری مزمن</th>
+                            <th>تالاسمی</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>MCV</strong></td>
+                            <td>کاهش (&lt;80)</td>
+                            <td>نرمال/کاهش خفیف</td>
+                            <td>کاهش شدید</td>
+                        </tr>
+                        <tr>
+                            <td><strong>فریتین</strong></td>
+                            <td>&lt;15 (تشخیصی)</td>
+                            <td>نرمال/بالا</td>
+                            <td>نرمال/بالا</td>
+                        </tr>
+                        <tr>
+                            <td><strong>TIBC</strong></td>
+                            <td>افزایش (&gt;360)</td>
+                            <td>کاهش (&lt;300)</td>
+                            <td>نرمال</td>
+                        </tr>
+                        <tr>
+                            <td><strong>آهن سرم (SI)</strong></td>
+                            <td>کاهش (&lt;30)</td>
+                            <td>کاهش (&lt;50)</td>
+                            <td>نرمال/بالا</td>
+                        </tr>
+                        <tr>
+                            <td><strong>RDW</strong></td>
+                            <td>افزایش (&gt;15%)</td>
+                            <td>نرمال</td>
+                            <td>نرمال</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="box-exam">
+                <strong>نکته امتحانی:</strong> فقر آهن در مرد بالغ یعنی خونریزی گوارشی (نیاز به کولونوسکوپی) مگر خلاف آن ثابت شود.
+            </div>
+        </section>
+
+        <section class="card">
+            <h3 class="content-title">درمان آنمی فقر آهن</h3>
+            <div class="box-treatment">
+                <strong>درمان انتخابی: آهن خوراکی</strong>
+                <ul class="text-sm mt-2 space-y-1">
+                    <li>دوز: 200mg المنتال روزانه (3-4 قرص فروس سولفات)</li>
+                    <li>زمان مصرف: با معده خالی (غذا جذب را کاهش می‌دهد)</li>
+                    <li>پاسخ به درمان: رتیکولوسیتوز در روز 4-7 شروع می‌شود</li>
+                    <li>طول درمان: 6-12 ماه پس از اصلاح هموگلوبین (برای پر شدن ذخایر)</li>
+                </ul>
+            </div>
+            <div class="box-exam mt-3">
+                <strong>عوارض آهن خوراکی:</strong>
+                <p class="text-sm mt-1">درد شکم، تهوع، استفراغ، یبوست (در 15-20% بیماران). راه حل: کاهش دوز یا استفاده از فرم آهسته‌رهش.</p>
+            </div>
+            <div class="mt-4">
+                <h4 class="font-bold text-sm mb-2">اندیکاسیون‌های آهن وریدی:</h4>
+                <ul class="custom-list text-sm">
+                    <li>عدم تحمل آهن خوراکی</li>
+                    <li>نیاز فوری به اصلاح فقر آهن</li>
+                    <li>خونریزی مداوم گوارشی یا قاعدگی شدید</li>
+                    <li>بیماران دیالیزی (مصرف‌کننده EPO)</li>
+                    <li>سوءجذب (بیماری التهابی روده، سلیاک)</li>
+                </ul>
+                <div class="box-exam mt-2">
+                    <strong>فرمول محاسبه آهن مورد نیاز:</strong>
+                    <p class="font-mono text-sm mt-1">آهن مورد نیاز (mg) = [(15 - Hb بیمار) × وزن بدن (kg) × 2.3] + 500 یا 1000</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h3 class="content-title">تست تحمل آهن (Iron Tolerance Test)</h3>
+            <p class="text-sm text-gray-700 mb-2">برای بررسی توانایی جذب آهن توسط بیمار.</p>
+            <div class="box-diagnosis">
+                <strong>روش انجام:</strong>
+                <ul class="text-sm mt-1 space-y-1">
+                    <li>بیمار با معده خالی دو قرص آهن می‌خورد</li>
+                    <li>آهن سرم به صورت سریال تا 2 ساعت بعد اندازه‌گیری می‌شود</li>
+                    <li><strong>تفسیر:</strong> اگر جذب طبیعی باشد، آهن سرم حداقل 100 μg/dl افزایش می‌یابد</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card">
+            <h3 class="content-title">آنمی ناشی از بیماری کلیوی (CKD)</h3>
+            <p class="text-sm text-gray-700 mb-2">آنمی نرموسیتیک نرموکرومیک به دلیل کاهش تولید اریتروپویتین.</p>
+            <ul class="custom-list text-sm">
+                <li>شدت آنمی با مرحله نارسایی کلیه ارتباط دارد</li>
+                <li><strong>استثناء:</strong> کلیه پلی‌کیستیک (آنمی خفیف‌تر) و دیابت (آنمی شدیدتر)</li>
+            </ul>
+            <div class="box-treatment mt-3">
+                <strong>درمان:</strong>
+                <ul class="text-sm mt-1 space-y-1">
+                    <li>اریتروپویتین زمانی که Hb &lt; 10 g/dl</li>
+                    <li>شرط پاسخ به EPO: ذخایر کافی آهن (فریتین &gt;100)</li>
+                    <li>هدف درمان: Hb = 10-12 g/dl (نه بیشتر)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Chapter 3 -->
+        <div id="ch3" class="section-header">
+            <span class="chapter-badge">فصل ۳</span>
+            <h2 class="section-title">آنمی‌های همولیتیک و خونریزی حاد</h2>
+        </div>
+
+        <section class="card">
+            <h3 class="content-title">اسفروسیتوز ارثی (Hereditary Spherocytosis)</h3>
+            <p class="text-sm text-gray-700 mb-2">نقص در پروتئین‌های اسکلت سلولی (آنکرین، اسپکترین). توارث غالباً اتوزوم غالب.</p>
+            <div class="box-diagnosis">
+                <strong>تظاهرات:</strong>
+                <ul class="text-sm mt-1 space-y-1">
+                    <li>زردی، اسپلنومگالی، سنگ کیسه صفرا (در سنین پایین)</li>
+                    <li><strong>آزمایشگاه:</strong> تنها بیماری با MCHC بالا. مشاهده اسفروسیت در لام. تست کومبس منفی.</li>
+                    <li><strong>تست تشخیصی:</strong> شکنندگی اسمزی (Osmotic Fragility)</li>
+                </ul>
+            </div>
+            <div class="box-treatment mt-3">
+                <strong>درمان:</strong>
+                <ul class="text-sm mt-1 space-y-1">
+                    <li>اسپلنکتومی در موارد متوسط تا شدید (ترجیحاً بعد از 6 سالگی)</li>
+                    <li>مصرف اسید فولیک ضروری است</li>
+                    <li>واکسیناسیون پنوموکوک و مننگوکوک قبل از اسپلنکتومی</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card">
+            <h3 class="content-title">کمبود آنزیم G6PD (فاویسم)</h3>
+            <p class="text-sm text-gray-700 mb-2">وابسته به X مغلوب. همولیز اکسیداتیو در مواجهه با استرس (باقلا، عفونت، داروها).</p>
+            <div class="box-diagnosis">
+                <strong>تشخیص:</strong>
+                <ul class="text-sm mt-1 space-y-1">
+                    <li>لام خون محیطی در فاز حاد: Bite Cells و Heinz Bodies</li>
+                    <li>سطح آنزیم در حمله حاد ممکن است نرمال باشد (باید 1-2 ماه بعد چک شود)</li>
+                </ul>
+            </div>
+            <div class="box-exam mt-3">
+                <strong>داروهای ممنوع:</strong>
+                <div class="grid grid-cols-2 gap-2 text-xs mt-2">
+                    <div class="bg-white p-2 rounded border">کوتریموکسازول</div>
+                    <div class="bg-white p-2 rounded border">داپسون</div>
+                    <div class="bg-white p-2 rounded border">نالیدیکسیک اسید</div>
+                    <div class="bg-white p-2 rounded border">نیتروفورانتوئین</div>
+                    <div class="bg-white p-2 rounded border">پریماکین</div>
+                    <div class="bg-white p-2 rounded border">راسبوریکاز</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h3 class="content-title">هموگلوبینوری حمله‌ای شبانه (PNH)</h3>
+            <p class="text-sm text-gray-700 mb-2">جهش اکتسابی ژن PIG-A و فقدان پروتئین‌های محافظ CD55/CD59.</p>
+            <div class="box-diagnosis">
+                <strong>تریاد PNH:</strong>
+                <ul class="text-sm mt-1 space-y-1">
+                    <li><strong>1. همولیز داخل عروقی:</strong> ادرار تیره صبحگاهی</li>
+                    <li><strong>2. پان‌سیتوپنی:</strong> آنمی، لکوپنی، ترومبوسیتوپنی</li>
+                    <li><strong>3. ترومبوز:</strong> وریدهای کبدی/شکمی (Budd-Chiari)</li>
+                </ul>
+            </div>
+            <div class="box-diagnosis mt-3">
+                <strong>تشخیص:</strong> فلوسیتومتری (کاهش CD55/CD59)
+            </div>
+            <div class="box-treatment mt-3">
+                <strong>درمان:</strong>
+                <ul class="text-sm mt-1 space-y-1">
+                    <li><strong>اکولیزوماب (Eculizumab):</strong> مهارکننده C5 - درمان اصلی</li>
+                    <li>اسید فولیک (الزامی)</li>
+                    <li>آنتی‌کوآگولان در صورت ترومبوز</li>
+                    <li>تزریق گلبول قرمز فیلتر شده (بدون WBC) در صورت نیاز</li>
+                    <li>کورتیکواستروئید درازمدت کنتراندیکه است</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card">
+            <h3 class="content-title">آنمی همولیتیک اتوایمیون (AIHA)</h3>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-red-50 p-4 rounded-lg border border-red-200">
+                    <h4 class="font-bold text-red-800 text-sm">نوع گرم (Warm - IgG)</h4>
+                    <ul class="custom-list text-xs mt-2">
+                        <li><strong>شایع‌تر</strong> (70-80% موارد)</li>
+                        <li>اسپلنومگالی</li>
+                        <li>میکرواسفروسیت در لام</li>
+                        <li>همراه با: لوپوس، CLL، داروها</li>
+                        <li><strong>تست کومبس:</strong> مثبت</li>
+                    </ul>
+                    <div class="mt-3 bg-white p-2 rounded border border-red-300">
+                        <strong class="text-xs">درمان:</strong>
+                        <ul class="text-xs mt-1">
+                            <li>1. کورتیکواستروئید</li>
+                            <li>2. اسپلنکتومی (اگر پاسخ نداد)</li>
+                            <li>3. ریتوکسیماب</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                    <h4 class="font-bold text-blue-800 text-sm">نوع سرد (Cold - IgM)</h4>
+                    <ul class="custom-list text-xs mt-2">
+                        <li>آگلوتیناسیون در سرما</li>
+                        <li>همراه با: مایکوپلاسما، منونوکلئوز، CLL</li>
+                        <li>لیز با کمپلمان (C3)</li>
+                        <li>آکروسیانوز در سرما</li>
+                        <li><strong>تست کومبس:</strong> مثبت برای C3</li>
+                    </ul>
+                    <div class="mt-3 bg-white p-2 rounded border border-blue-300">
+                        <strong class="text-xs">درمان:</strong>
+                        <ul class="text-xs mt-1">
+                            <li>1. گرم نگه داشتن</li>
+                            <li>2. ریتوکسیماب</li>
+                            <li>کورتون و اسپلنکتومی موثر نیستند</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h3 class="content-title">آنمی ناشی از خونریزی حاد</h3>
+            <p class="text-sm text-gray-700 mb-3">بعد از خونریزی شدید و ناگهانی سه مرحله بالینی و فیزیوپاتولوژیک رخ می‌دهد:</p>
+            <div class="space-y-3">
+                <div class="bg-gray-50 p-3 rounded border-r-4 border-red-500">
+                    <strong class="text-sm">مرحله 1: هیپوولمی</strong>
+                    <p class="text-xs text-gray-700 mt-1">کاهش سطح هوشیاری و نارسایی کلیه. در CBC آنمی وجود ندارد (میزان هموگلوبین تحت تأثیر قرار نگرفته).</p>
+                </div>
+                <div class="bg-gray-50 p-3 rounded border-r-4 border-orange-500">
+                    <strong class="text-sm">مرحله 2: رقیق شدن خون</strong>
+                    <p class="text-xs text-gray-700 mt-1">شیفت مایع از فضای خارج عروقی به داخل عروق. هیپوولمی تدریجاً به آنمی تبدیل می‌شود.</p>
+                </div>
+                <div class="bg-gray-50 p-3 rounded border-r-4 border-green-500">
+                    <strong class="text-sm">مرحله 3: پاسخ مغز استخوان</strong>
+                    <p class="text-xs text-gray-700 mt-1">رتیکولوسیت‌ها و اریتروپویتین افزایش می‌یابند. کاهش تدریجی آنمی.</p>
+                </div>
+            </div>
+            <div class="box-exam mt-3">
+                <strong>نکته امتحانی:</strong> اگر 3 روز بعد از خونریزی هموگلوبین به 7 برسد، به این معناست که 50% از حجم خون از دست رفته است.
+            </div>
+        </section>
+
+        <!-- Chapter 4 -->
+        <div id="ch4" class="section-header">
+            <span class="chapter-badge">فصل ۴</span>
+            <h2 class="section-title">اختلالات هموگلوبین (هموگلوبینوپاتی‌ها)</h2>
+        </div>
+
+        <section class="card">
+            <h3 class="content-title">منحنی اتصال اکسیژن به هموگلوبین</h3>
+            <p class="text-sm text-gray-700 mb-3">منحنی به صورت سیگموئیدی (S شکل) است. <strong>P50:</strong> فشاری از اکسیژن که در آن نقطه نیمی از هموگلوبین اشباع شده است (طبیعی: 26 mmHg).</p>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-blue-50 p-4 rounded border border-blue-300">
+                    <h4 class="font-bold text-blue-800 text-sm">شیفت به راست (افزایش P50)</h4>
+                    <p class="text-xs text-gray-700 mt-1">کاهش میل ترکیبی به O₂ → افزایش آزادسازی O₂ در بافت</p>
+                    <strong class="text-xs mt-2 block">علل:</strong>
+                    <ul class="text-xs mt-1 space-y-1">
+                        <li>↑ دما</li>
+                        <li>↑ CO₂</li>
+                        <li>↓ pH (اسیدوز)</li>
+                        <li>↑ 2,3-BPG</li>
+                    </ul>
+                </div>
+                <div class="bg-red-50 p-4 rounded border border-red-300">
+                    <h4 class="font-bold text-red-800 text-sm">شیفت به چپ (کاهش P50)</h4>
+                    <p class="text-xs text-gray-700 mt-1">افزایش میل ترکیبی به O₂ → کاهش آزادسازی O₂ در بافت</p>
+                    <strong class="text-xs mt-2 block">علل:</strong>
+                    <ul class="text-xs mt-1 space-y-1">
+                        <li>↓ دما</li>
+                        <li>↓ CO₂</li>
+                        <li>↑ pH (آلکالوز)</li>
+                        <li>↓ 2,3-BPG</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h3 class="content-title">بیماری سلول داسی‌شکل (Sickle Cell Disease)</h3>
+            <p class="text-sm text-gray-700 mb-2">جهش نقطه‌ای در زنجیره بتا: والین جایگزین گلوتامات می‌شود (HbSS).</p>
+            <div class="box-diagnosis">
+                <strong>تشخیص:</strong> الکتروفورز هموگلوبین (HbSS)، لام خون محیطی (سلول‌های داسی)
+            </div>
+            <div class="mt-3">
+                <h4 class="font-bold text-sm mb-2">عوارض حاد:</h4>
+                <div class="space-y-3">
+                    <div class="bg-red-50 p-3 rounded border border-red-200">
+                        <strong class="text-sm text-red-800">بحران دردناک (Painful Crisis)</strong>
+                        <p class="text-xs text-gray-700 mt-1">شایع‌ترین عارضه. ایسکمی بافتی به علت انسداد عروقی.</p>
+                        <p class="text-xs text-gray-700 mt-1"><strong>درمان:</strong> هیدراتاسیون + مسکن اپیوئیدی (کتورولاک ممنوع)</p>
+                    </div>
+                    <div class="bg-orange-50 p-3 rounded border border-orange-200">
+                        <strong class="text-sm text-orange-800">سندرم حاد قفسه سینه (ACS)</strong>
+                        <p class="text-xs text-gray-700 mt-1">تب، درد قفسه سینه، انفیلتراسیون ریوی. دومین علت مرگ.</p>
+                        <p class="text-xs text-gray-700 mt-1"><strong>درمان:</strong> اکسیژن، آنتی‌بیوتیک، تعویض خون</p>
+                    </div>
+                    <div class="bg-yellow-50 p-3 rounded border border-yellow-200">
+                        <strong class="text-sm text-yellow-800">انفارکتوس طحال</strong>
+                        <p class="text-xs text-gray-700 mt-1">اتواسپلنکتومی در کودکی → خطر عفونت با کپسول‌دارها</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box-treatment mt-4">
+                <strong>درمان استاندارد:</strong>
+                <ul class="text-sm mt-2 space-y-1">
+                    <li><strong>هیدروکسی‌اوره:</strong> افزایش HbF (هموگلوبین فتال)</li>
+                    <li>واکسیناسیون: پنوموکوک، مننگوکوک، هموفیلوس آنفلوانزا</li>
+                    <li>پروفیلاکسی پنی‌سیلین تا 5 سالگی</li>
+                    <li>اسید فولیک</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card">
+            <h3 class="content-title">تالاسمی‌ها</h3>
+            <div class="space-y-4">
+                <div class="border-l-4 border-blue-500 pl-3 bg-blue-50 p-3 rounded">
+                    <h4 class="font-bold text-sm text-blue-900">بتا تالاسمی مینور (β-Thalassemia Minor)</h4>
+                    <ul class="text-xs text-gray-700 mt-2 space-y-1">
+                        <li>آنمی میکروسیتیک خفیف</li>
+                        <li>RBC Count بالا (برخلاف فقر آهن)</li>
+                        <li>اندکس منتزر &lt; 13</li>
+                        <li>HbA2 &gt; 3.5% در الکتروفورز</li>
+                        <li>معمولاً بی‌علامت - نیاز به درمان ندارد</li>
+                    </ul>
+                </div>
+                <div class="border-l-4 border-red-500 pl-3 bg-red-50 p-3 rounded">
+                    <h4 class="font-bold text-sm text-red-900">بتا تالاسمی ماژور (Cooley's Anemia)</h4>
+                    <ul class="text-xs text-gray-700 mt-2 space-y-1">
+                        <li>آنمی شدید وابسته به تزریق خون (معمولاً هر 2-4 هفته)</li>
+                        <li>چهره خاص (Chipmunk face) به علت هایپرپلازی مغز استخوان</li>
+                        <li>هپاتواسپلنومگالی</li>
+                        <li>هموسیدروز (اضافه بار آهن)</li>
+                    </ul>
+                    <div class="mt-2 bg-white p-2 rounded border border-red-200">
+                        <strong class="text-xs">درمان:</strong>
+                        <ul class="text-xs mt-1">
+                            <li>تزریق خون منظم</li>
+                            <li><strong>شلاتور آهن:</strong> دفروکسامین یا دفراسیروکس</li>
+                            <li>پیوند مغز استخوان (درمان قطعی)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-l-4 border-purple-500 pl-3 bg-purple-50 p-3 rounded">
+                    <h4 class="font-bold text-sm text-purple-900">بتا تالاسمی اینترمدیا</h4>
+                    <p class="text-xs text-gray-700 mt-1">بین مینور و ماژور. گاهی نیاز به تزریق خون دارد.</p>
+                </div>
+                <div class="border-l-4 border-green-500 pl-3 bg-green-50 p-3 rounded">
+                    <h4 class="font-bold text-sm text-green-900">آلفا تالاسمی</h4>
+                    <ul class="text-xs text-gray-700 mt-2 space-y-1">
+                        <li><strong>حذف 1-2 ژن:</strong> بی‌علامت یا آنمی خفیف (Silent carrier یا α-Thal Minor)</li>
+                        <li><strong>حذف 3 ژن:</strong> HbH Disease (آنمی متوسط)</li>
+                        <li><strong>حذف 4 ژن:</strong> هیدروپس فتالیس (Hb Barts) - کشنده در رحم</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 5 -->
+        <div id="ch5" class="section-header">
+            <span class="chapter-badge">فصل ۵</span>
+            <h2 class="section-title">آنمی آپلاستیک و میلودیسپلازی</h2>
+        </div>
+
+        <section class="card">
+            <h3 class="content-title">آنمی آپلاستیک (Aplastic Anemia)</h3>
+            <p class="text-sm text-gray-700 mb-3"><strong>تعریف:</strong> پان‌سیتوپنی + مغز استخوان هیپوسلولار (چرب) + فقدان اسپلنومگالی.</p>
+            <div class="box-diagnosis">
+                <strong>علل:</strong>
+                <ul class="text-sm mt-2 space-y-1">
+                    <li><strong>ایدیوپاتیک (50%):</strong> شایع‌ترین</li>
+                    <li><strong>داروها:</strong> کلرامفنیکل، فنیل‌بوتازون، کربامازپین</li>
+                    <li><strong>ویروس‌ها:</strong> هپاتیت سرونگاتیو، EBV، CMV، HIV</li>
+                    <li><strong>مواد شیمیایی:</strong> بنزن</li>
+                    <li><strong>تشعشع</strong></li>
+                    <li><strong>PNH</strong> (رابطه دو طرفه)</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h4 class="font-bold text-sm mb-2">آنمی فانکونی (Fanconi Anemia)</h4>
+                <p class="text-xs text-gray-700">نوع ارثی آنمی آپلاستیک (اتوزوم رسسیو)</p>
+                <ul class="custom-list text-xs mt-2">
+                    <li>پان‌سیتوپنی + ناهنجاری‌های اسکلتی (شست)، لکه‌های شیر قهوه‌ای، کوتاهی قد</li>
+                    <li>تست شکنندگی کروموزومی مثبت</li>
+                    <li>خطر بالای AML و تومورهای جامد</li>
+                </ul>
+            </div>
+            <div class="box-treatment mt-4">
+                <strong>درمان آنمی آپلاستیک:</strong>
+                <div class="grid md:grid-cols-2 gap-3 mt-2">
+                    <div class="bg-white p-3 rounded border border-green-300">
+                        <strong class="text-sm text-green-800">زیر 40 سال با دهنده:</strong>
+                        <p class="text-xs mt-1">پیوند مغز استخوان (درمان قطعی)</p>
+                    </div>
+                    <div class="bg-white p-3 rounded border border-blue-300">
+                        <strong class="text-sm text-blue-800">بالای 40 سال یا بدون دهنده:</strong>
+                        <p class="text-xs mt-1">سرکوب ایمنی: ATG + سیکلوسپورین</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h3 class="content-title">سندرم‌های میلودیسپلاستیک (MDS)</h3>
+            <p class="text-sm text-gray-700 mb-3"><strong>تعریف:</strong> سیتوپنی + مغز استخوان هیپرسلولار (خونسازی غیرموثر). خطر تبدیل به AML.</p>
+            <div class="box-exam">
+                <strong>یافته‌های کلیدی:</strong>
+                <ul class="text-sm mt-2 space-y-1">
+                    <li>آنمی ماکروسیتیک</li>
+                    <li>نوتروفیل‌های هیپوسگمانته (Pseudo-Pelger-Huet)</li>
+                    <li>رینگ سیدروبلاست (Ring Sideroblasts)</li>
+                    <li>حذف 5q: پیش‌آگهی خوب، پاسخ به لنالیدومید</li>
+                </ul>
+            </div>
+            <div class="box-treatment mt-3">
+                <strong>درمان:</strong>
+                <ul class="text-sm mt-1 space-y-1">
+                    <li><strong>ریسک پایین:</strong> حمایتی (تزریق خون، G-CSF)</li>
+                    <li><strong>ریسک متوسط/بالا:</strong> آزاسیتیدین یا دسیتابین</li>
+                    <li><strong>حذف 5q:</strong> لنالیدومید</li>
+                    <li><strong>جوان با ریسک بالا:</strong> پیوند مغز استخوان</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Chapter 6 -->
+        <div id="ch6" class="section-header">
+            <span class="chapter-badge">فصل ۶</span>
+            <h2 class="section-title">آنمی‌های مگالوبلاستیک</h2>
+        </div>
+
+        <section class="card">
+            <h3 class="content-title">کمبود B12 و فولات</h3>
+            <p class="text-sm text-gray-700 mb-3">اختلال در سنتز DNA → آنمی ماکروسیتیک (MCV &gt; 100) + نوتروفیل‌های هیپرسگمانته (≥6 لوب).</p>
+            <div class="overflow-x-auto rounded-lg border border-gray-200 mb-4">
+                <table class="w-full text-sm">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th>ویژگی</th>
+                            <th>کمبود B12</th>
+                            <th>کمبود فولات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>علل شایع</strong></td>
+                            <td>
+                                • گیاهخواری مطلق<br>
+                                • آنمی پرنیشز<br>
+                                • گاسترکتومی<br>
+                                • بیماری ایلئوم (کرون)
+                            </td>
+                            <td>
+                                • تغذیه نامناسب<br>
+                                • الکلیسم<br>
+                                • حاملگی<br>
+                                • داروها (متوتروکسات)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>علائم عصبی</strong></td>
+                            <td class="bg-red-50"><strong>دارد</strong><br>(پارستزی، آتاکسی، دمانس)</td>
+                            <td class="bg-green-50">ندارد</td>
+                        </tr>
+                        <tr>
+                            <td><strong>متابولیت‌ها</strong></td>
+                            <td>
+                                هوموسیستئین ↑<br>
+                                متیل‌مالونیک اسید ↑
+                            </td>
+                            <td>
+                                هوموسیستئین ↑<br>
+                                متیل‌مالونیک اسید نرمال
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="box-treatment">
+                <strong>درمان - نکته بسیار مهم:</strong>
+                <p class="text-sm mt-2 bg-yellow-50 p-3 rounded border border-yellow-300">
+                    <strong>هشدار:</strong> اگر علت مشخص نیست، همیشه اول B12 بدهید یا هر دو را با هم. 
+                    <span class="text-red-700 font-bold">تجویز فولات به تنهایی در کمبود B12، آنمی را اصلاح می‌کند اما عوارض عصبی را بدتر می‌کند.</span>
+                </p>
+                <ul class="text-sm mt-2 space-y-1">
+                    <li><strong>B12:</strong> 1000 mcg IM روزانه به مدت 1 هفته، سپس هفتگی به مدت 1 ماه، سپس ماهانه مادام‌العمر</li>
+                    <li><strong>فولات:</strong> 1-5 mg خوراکی روزانه</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card">
+            <h3 class="content-title">آنمی پرنیشز (Pernicious Anemia)</h3>
+            <p class="text-sm text-gray-700 mb-2">شایع‌ترین علت کمبود B12. بیماری اتوایمیون علیه سلول‌های پاریتال معده.</p>
+            <div class="box-diagnosis">
+                <strong>ویژگی‌ها:</strong>
+                <ul class="text-sm mt-2 space-y-1">
+                    <li>آنتی‌بادی علیه سلول پاریتال (90%) یا فاکتور داخلی (70%)</li>
+                    <li>آکلرهیدریا (کاهش اسید معده)</li>
+                    <li>افزایش گاسترین سرم</li>
+                    <li>همراهی با سایر بیماری‌های اتوایمیون (تیروئید، ویتیلیگو، دیابت نوع 1)</li>
+                    <li>خطر افزایش یافته کارسینوم معده</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Chapter 7 -->
+        <div id="ch7" class="section-header">
+            <span class="chapter-badge">فصل ۷</span>
+            <h2 class="section-title">طب انتقال خون (Blood Transfusion)</h2>
+        </div>
+
+        <section class="card">
+            <h3 class="content-title">فرآورده‌های خونی و اندیکاسیون‌ها</h3>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-red-50 p-4 rounded border border-red-200">
+                    <h4 class="font-bold text-red-800 text-sm">گلبول قرمز فشرده (Packed RBC)</h4>
+                    <ul class="text-xs mt-2 space-y-1">
+                        <li><strong>اندیکاسیون:</strong></li>
+                        <li>• Hb &lt; 7 g/dl در بیمار پایدار</li>
+                        <li>• Hb &lt; 8 g/dl در بیماری قلبی یا جراحی ارتوپدی</li>
+                        <li>• Hb &lt; 10 g/dl در سندرم کرونری حاد فعال</li>
+                        <li><strong>هر واحد → افزایش 1 g/dl در Hb</strong></li>
+                    </ul>
+                </div>
+                <div class="bg-yellow-50 p-4 rounded border border-yellow-200">
+                    <h4 class="font-bold text-yellow-800 text-sm">پلاکت (Platelet Concentrate)</h4>
+                    <ul class="text-xs mt-2 space-y-1">
+                        <li><strong>اندیکاسیون:</strong></li>
+                        <li>• &lt; 10,000 (پیشگیری در بیمار پایدار)</li>
+                        <li>• &lt; 50,000 (خونریزی فعال/جراحی)</li>
+                        <li>• &lt; 100,000 (جراحی مغز/چشم)</li>
+                        <li class="text-red-700 font-bold">• در TTP و HIT ممنوع است</li>
+                    </ul>
+                </div>
+                <div class="bg-blue-50 p-4 rounded border border-blue-200">
+                    <h4 class="font-bold text-blue-800 text-sm">پلاسمای تازه منجمد (FFP)</h4>
+                    <ul class="text-xs mt-2 space-y-1">
+                        <li><strong>اندیکاسیون:</strong></li>
+                        <li>• اصلاح اختلالات فاکتوری (INR &gt; 1.5)</li>
+                        <li>• خونریزی در بیماران با کومادین</li>
+                        <li>• TTP (تعویض پلاسما)</li>
+                        <li>• کمبود فاکتور V</li>
+                    </ul>
+                </div>
+                <div class="bg-green-50 p-4 rounded border border-green-200">
+                    <h4 class="font-bold text-green-800 text-sm">کرایوپرسیپیتات</h4>
+                    <ul class="text-xs mt-2 space-y-1">
+                        <li><strong>محتویات:</strong> فیبرینوژن، فاکتور VIII، vWF، فاکتور XIII</li>
+                        <li><strong>اندیکاسیون:</strong></li>
+                        <li>• کاهش فیبرینوژن (DIC، خونریزی)</li>
+                        <li>• بیماری von Willebrand</li>
+                        <li>• هموفیلی A (اگر کنسانتره در دسترس نباشد)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h3 class="content-title">عوارض انتقال خون</h3>
+            <div class="space-y-3">
+                <div class="bg-yellow-50 p-3 rounded border-r-4 border-yellow-400">
+                    <strong class="text-sm">واکنش تب‌دار غیرهمولیتیک (FNHTR)</strong>
+                    <ul class="text-xs text-gray-700 mt-1 space-y-1">
+                        <li><strong>شایع‌ترین عارضه</strong></li>
+                        <li>علائم: تب، لرز (بدون همولیز)</li>
+                        <li>علت: آنتی‌بادی علیه لکوسیت‌ها یا سیتوکاین‌های ذخیره شده</li>
+                        <li>پیشگیری: استفاده از خون کم‌لکوسیت (Leukoreduced)</li>
+                        <li>درمان: تب‌بر (استامینوفن)</li>
+                    </ul>
+                </div>
+                <div class="bg-red-50 p-3 rounded border-r-4 border-red-500">
+                    <strong class="text-sm">واکنش همولیتیک حاد (Acute Hemolytic Reaction)</strong>
+                    <ul class="text-xs text-gray-700 mt-1 space-y-1">
+                        <li><strong>اورژانس - خطرناک‌ترین عارضه</strong></li>
+                        <li>علت: ناسازگاری ABO (خطای انسانی)</li>
+                        <li>علائم: تب، لرز، درد کمر/قفسه سینه، ادرار تیره (هموگلوبینوری)، شوک، DIC</li>
+                        <li>اقدام: <span class="font-bold text-red-700">قطع فوری تزریق خون + هیدراتاسیون تهاجمی + دیورز</span></li>
+                    </ul>
+                </div>
+                <div class="bg-blue-50 p-3 rounded border-r-4 border-blue-500">
+                    <strong class="text-sm">آسیب ریوی حاد (TRALI)</strong>
+                    <ul class="text-xs text-gray-700 mt-1 space-y-1">
+                        <li><strong>شایع‌ترین علت مرگ مرتبط با تزریق خون</strong></li>
+                        <li>علائم: تنگی نفس شدید، ادم ریوی غیرقلبی (طی 6 ساعت)</li>
+                        <li>علت: آنتی‌بادی دهنده علیه لکوسیت گیرنده → ARDS</li>
+                        <li>درمان: حمایتی (اکسیژن، ونتیلاسیون)، خودبخود بهبود می‌یابد</li>
+                    </ul>
+                </div>
+                <div class="bg-purple-50 p-3 rounded border-r-4 border-purple-500">
+                    <strong class="text-sm">اضافه بار حجمی (TACO)</strong>
+                    <ul class="text-xs text-gray-700 mt-1 space-y-1">
+                        <li>نارسایی قلبی و ادم ریوی ناشی از حجم زیاد</li>
+                        <li>علائم: تنگی نفس، راکرال در ریه، افزایش JVP، افزایش فشار خون</li>
+                        <li>افتراق با TRALI: فشار خون در TACO بالا است، در TRALI پایین</li>
+                        <li>درمان: دیورتیک (فوروسماید)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 8 -->
+        <div id="ch8" class="section-header">
+            <span class="chapter-badge">فصل ۸</span>
+            <h2 class="section-title">لوسمی میلوئید حاد (AML)</h2>
+        </div>
+
+        <section class="card">
+            <h3 class="content-title">تعریف و تشخیص AML</h3>
+            <p class="text-sm text-gray-700 mb-3">تکثیر بدخیم بلاست‌های میلوئید در مغز استخوان و خون محیطی.</p>
+            <div class="box-diagnosis">
+                <strong>معیار تشخیص:</strong>
+                <p class="text-sm mt-2 bg-red-50 p-3 rounded border border-red-300">
+                    <strong class="text-red-700">&gt; 20% بلاست</strong> در مغز استخوان یا خون محیطی
+                </p>
+                <p class="text-sm mt-2"><strong>یافته اختصاصی:</strong> اجسام آور (Auer Rods) در سیتوپلاسم بلاست‌ها - پاتوگنومونیک AML</p>
+            </div>
+            <div class="mt-4">
+                <h4 class="font-bold text-sm mb-2">تظاهرات بالینی:</h4>
+                <ul class="custom-list text-sm">
+                    <li><strong>نارسایی مغز استخوان:</strong> آنمی، عفونت، خونریزی</li>
+                    <li><strong>تظاهرات خاص:</strong> هیپرتروفی لثه (در نوع مونوسیتی - M5)، سارکوم میلوئید (کلروما)</li>
+                    <li>هپاتواسپلنومگالی، لنفادنوپاتی</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card">
+            <h3 class="content-title">لوسمی پرومیلوسیتیک حاد (APL - M3)</h3>
+            <div class="bg-yellow-50 p-4 rounded border-2 border-yellow-400">
+                <h4 class="font-bold text-yellow-900 text-sm">اورژانس انکولوژیک - خطر بالای DIC و خونریزی شدید</h4>
+                <div class="mt-3">
+                    <strong class="text-sm">مشخصات کلیدی:</strong>
+                    <ul class="text-xs mt-2 space-y-1">
+                        <li><strong>ژنتیک:</strong> ترانسلوکاسیون t(15;17) → ژن فیوژن PML-RARA</li>
+                        <li><strong>مورفولوژی:</strong> پرومیلوسیت‌های غیرطبیعی با گرانول‌های زیاد و اجسام آور متعدد</li>
+                        <li><strong>عارضه:</strong> DIC شدید (به علت آزاد شدن پروکوآگولان‌ها از گرانول‌های پرومیلوسیت‌ها)</li>
+                        <li><strong>پیش‌آگهی:</strong> بسیار خوب با درمان مناسب (نرخ بهبودی &gt;80%)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box-treatment mt-3">
+                <strong>درمان APL - متفاوت از سایر انواع AML:</strong>
+                <ul class="text-sm mt-2 space-y-1">
+                    <li><strong>اسید رتینوئیک (ATRA):</strong> القای تمایز پرومیلوسیت‌ها</li>
+                    <li><strong>آرسنیک تری‌اکسید (ATO):</strong> القای آپوپتوز</li>
+                    <li>شیمی‌درمانی کلاسیک کمتر استفاده می‌شود</li>
+                    <li><strong>عارضه ATRA:</strong> سندرم تمایز (تب، ادم ریوی، افیوژن پلورال) → درمان: دگزامتازون</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card">
+            <h3 class="content-title">درمان و پیش‌آگهی AML</h3>
+            <div class="box-treatment">
+                <strong>درمان القایی استاندارد: رژیم 7+3</strong>
+                <ul class="text-sm mt-2 space-y-1">
+                    <li><strong>سیتارابین (Ara-C):</strong> 7 روز</li>
+                    <li><strong>دانوروبیسین یا ایداروبیسین:</strong> 3 روز</li>
+                    <li>هدف: ریمیشن کامل (CR) - بلاست &lt; 5% در مغز استخوان</li>
+                </ul>
+            </div>
+            <div class="grid md:grid-cols-2 gap-4 mt-4">
+                <div class="bg-green-50 p-3 rounded border border-green-300">
+                    <h4 class="font-bold text-green-800 text-sm">پیش‌آگهی خوب</h4>
+                    <ul class="text-xs mt-2 space-y-1">
+                        <li>t(15;17) - APL</li>
+                        <li>t(8;21)</li>
+                        <li>inv(16)</li>
+                        <li>جهش NPM1 بدون FLT3-ITD</li>
+                        <li>جهش CEBPA</li>
+                    </ul>
+                    <p class="text-xs mt-2 text-gray-700">نرخ بقا 5 ساله: 60-70%</p>
+                </div>
+                <div class="bg-red-50 p-3 rounded border border-red-300">
+                    <h4 class="font-bold text-red-800 text-sm">پیش‌آگهی بد</h4>
+                    <ul class="text-xs mt-2 space-y-1">
+                        <li>کاریوتایپ پیچیده (≥3 ناهنجاری)</li>
+                        <li>حذف کروموزوم 5 یا 7</li>
+                        <li>جهش FLT3-ITD</li>
+                        <li>جهش TP53</li>
+                        <li>AML ثانویه (بعد از MDS یا شیمی‌درمانی)</li>
+                    </ul>
+                    <p class="text-xs mt-2 text-gray-700">نرخ بقا 5 ساله: 10-20%</p>
+                </div>
+            </div>
+            <div class="box-exam mt-4">
+                <strong>نکات مهم:</strong>
+                <ul class="text-sm mt-2 space-y-1">
+                    <li>درمان تثبیتی (Consolidation): سیتارابین دوز بالا</li>
+                    <li>پیوند مغز استخوان: در ریسک متوسط و بالا در ریمیشن اول</li>
+                    <li>بیماران مسن (&gt;60 سال): درمان کم‌شدت یا هیپومتیلیت‌کننده‌ها (آزاسیتیدین)</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-gray-400 text-center text-xs py-8 mt-12">
+        <p>تهیه شده بر اساس منابع معتبر هماتولوژی - سطر به سطر دکتر کامران احمدی</p>
+        <p class="mt-2">ویژه آزمون‌های پره‌انترنی، دستیاری و بورد داخلی</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Active state for navigation chips on scroll
+        const sections = document.querySelectorAll('div[id^="ch"]');
+        const navChips = document.querySelectorAll('.nav-chip');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navChips.forEach(chip => {
+                chip.classList.remove('active');
+                if (chip.getAttribute('href').includes(current)) {
+                    chip.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
